@@ -31,6 +31,7 @@ BuildArch:	noarch
 
 %{?scl:BuildRequires: %{scl}-runtime}
 %{?scl:Requires: %{scl}-runtime}
+%{?scl:Obsoletes: nodejs010-gyp}
 
 %description
 GYP is a tool to generates native Visual Studio, Xcode and SCons
