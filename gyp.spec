@@ -9,7 +9,7 @@
 
 Name:		%{?scl_prefix}gyp
 Version:	0.1
-Release:	0.11%{?revision:.%{revision}svn}%{?dist}
+Release:	0.12%{?revision:.%{revision}svn}%{?dist}
 Summary:	Generate Your Projects
 
 Group:		Development/Tools
@@ -73,11 +73,14 @@ rm -rf $RPM_BUILD_ROOT
 %{?scl:%_scl_root}%{python_sitelib}/*
 
 %changelog
+* Thu Mar 20 2014 Tomas Hrcka <thrcka@redhat.com> - 0.1-0.12.1617svn
+- Obsolete nodejs010-gyp
+
 * Sat Aug 03 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.1-0.11.1617svn
- 85 - Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
 
 * Tue Apr 23 2013 Akira TAGOH <tagoh@redhat.com> - 0.1-0.10.1617svn
- 91 - Rebase to r1617
+- Rebase to r1617
 
 * Mon Apr 08 2013 Stanislav Ochotnicky <sochotnicky@redhat.com> - 0.1-0.9.1010svn
 - Add SCL runtime to Requires as well
